@@ -1,6 +1,9 @@
 class SessionsController < ApplicationController
    before_action :require_login
    
+   def new 
+   end
+   
    def create
     if params[:name].present?
       session[:name] = params[:name]
